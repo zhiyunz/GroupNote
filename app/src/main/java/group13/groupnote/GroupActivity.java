@@ -1,5 +1,7 @@
 package group13.groupnote;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -36,10 +38,13 @@ public class GroupActivity extends AppCompatActivity {
         expListView.setAdapter(listAdapter);
 
         Button button_new_group = (Button)findViewById(R.id.button_new_group);
+        final Context context = this;
         button_new_group.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //TODO:START ADD NEW GROUP ACTIVITY
+                Intent intent = new Intent(context,AddGroupActivity.class);
+                startActivity(intent);
             }
         });
     }
