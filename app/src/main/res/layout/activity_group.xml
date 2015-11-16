@@ -7,7 +7,17 @@
 
     <ExpandableListView
         android:id="@+id/listview_group"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:gravity="top"
+        />
+
+    <Button
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:text="Add A New Group"
+        android:id="@+id/button_new_group"
+        android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>
